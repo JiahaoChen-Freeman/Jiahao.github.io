@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Verify Page</title>
+</head>
+
+<script>
+    function check() {
+        var password = document.getElementById("userPass").value;
+        if (password == "20210814") {
+            window.location.href = "index.html";}
+        else
+            {
+                alert("密码错误!")
+            }
+    }
+</script>
+
+<body style="text-align: center;">
+<div style="position: relative;">
+    <img src="./figs/password.jpg" style="width: 100%;">
+    <div style="position: absolute; top: 20%; left: 10%;; border: 3px solid black; border-radius: 15px; padding: 40px; font-size: 24px; margin-top: 100px; display: inline-block">
+        <p style="font-family: 'FangSong'; font-size: 18px">
+            在下方框中输入修狗爱情故事开始的日期<br>(XXXXXXXX)即可开始故事！
+        </p>
+
+        <input type="password" id="userPass" style="font-size: 20px;">
+        <br><br>
+        <button onclick="check()" style="font-family: 'FangSong'; font-weight: bold; font-size: 20px">进入故事</button>
+    </div>
+</div>
+
+</body>
+</html>
